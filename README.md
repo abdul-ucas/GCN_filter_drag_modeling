@@ -37,7 +37,7 @@ Jupyter Notebook
 Install dependencies:
 
 ```bash
-pip install torch torch-geometric numpy pandas matplotlib scikit-learn scipy
+!pip install torch torch-geometric numpy pandas matplotlib scikit-learn scipy
 ```
 
 ---
