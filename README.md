@@ -10,8 +10,6 @@ The model is trained using graph-structured filtered Two-Fluid Model (TFM) simul
 
 ```
 ├── gcn_filter_drag_model.ipynb          # Main notebook: data preparation, graph construction, GCN training and evaluation
-├── gcn_embeddings_visualization.ipynb   # GCN embedding visualization (run after training or reloading model)
-├── recreate_cfd_mesh_2d.ipynb           # Example: how to reconstruct 2D CFD mesh from simulation snapshots using spatial coordinates
 ├── saved_models/
 │   ├── final_3_marker_gcn_DF_model_updated.pt           # Best model: Group 2 (75, 275, 300 μm)
 │   └── geldart_B_3_marker_gcn_DF_model_updated.pt       # Group 1: Geldart B particles (275, 300 μm)
@@ -26,7 +24,6 @@ The model is trained using graph-structured filtered Two-Fluid Model (TFM) simul
 ```
 Python        (we used Python 3.11.13 for development and testing)
 PyTorch       (deep learning framework)
-PyTorch Geometric (graph neural network library)
 NumPy
 Pandas
 Matplotlib
@@ -86,41 +83,9 @@ To train the GCN model on a new dataset, provide your filtered simulation data i
 - Model checkpointing based on best validation MSE
 - Training history saving
 
-### 3. Visualize GCN Embeddings
-
-After training or reloading the model, run:
-
-```
-gcn_embeddings_visualization.ipynb
-```
-
-> This notebook must be run after training or reloading the GCN model, as it requires the model to be loaded in memory to extract node embeddings during inference on test graphs.
-
-### 4. Reconstruct 2D CFD Mesh
-
-Since this is a graph-based learning framework, CFD snapshot data must be spatially sorted and restructured before graph construction. An example of how to reconstruct the 2D CFD mesh from simulation snapshots using spatial coordinates is provided in:
-
-```
-recreate_cfd_mesh_2d.ipynb
-```
-
----
-After reconstructing the 2D mesh, data can be filtered and processed to create the graph datasets required for GCN training and evaluation(flatten the 2D data into 1D arrays for graph construction, where each node corresponds to a cell in the filtered domain with its associated features and target variable).
-
 ## Data Availability
 
 The source code, saved model weights, and training history are publicly available in this repository. The filtered simulation datasets (data pickle files) used for training and evaluation are large files and are available from the corresponding author upon reasonable request.
-
----
-
-## Extending This Work
-
-This codebase is designed to be modular and extensible. Future researchers can:
-
-- Train GCN models on new particle systems or operating conditions
-- Explore different input marker combinations or target variable formulations
-- Extend the framework to three-dimensional filtered domains
-- Apply the graph-based learning approach to other sub-grid closure terms in the filtered TFM
 
 ---
 
