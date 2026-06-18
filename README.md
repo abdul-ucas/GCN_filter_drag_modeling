@@ -92,7 +92,7 @@ The source code, saved model weights, and training history are publicly availabl
 ## Citation
 
 ```
-@article{mateen2025gcn,
+@article{abdul-ucas,
   title={Graph convolutional network-based filtered drag model for coarse-grid TFM simulations of gas-solid fluidized beds},
   author={Abdul Mateen et al.},
   journal={},
