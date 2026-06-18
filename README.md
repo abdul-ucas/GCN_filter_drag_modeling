@@ -93,7 +93,7 @@ The source code, saved model weights, and training history are publicly availabl
 
 ```
 @article{mateen2025gcn,
-  title={Development of graph convolutional network-based filtered drag closure for coarse grid two-fluid model simulation of gas-solid flows},
+  title={Graph convolutional network-based filtered drag model for coarse-grid TFM simulations of gas-solid fluidized beds},
   author={Abdul Mateen et al.},
   journal={},
   year={2026}
