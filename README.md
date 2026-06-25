@@ -2,7 +2,10 @@
 
 This repository provides an implementation of a Graph Convolutional Network (GCN)-based filtered drag model for gas–solid fluidized bed simulations.
 
-The model and implementation is part of the supplentary material to the publication.
+The model and implementation is part of the supplentary material to the publication:
+Paper title: “Graph convolutional network-based filtered drag model for coarse-grid TFM simulations of gas-solid fluidized beds”
+
+Authors: Abdul Mateen， Qinyu Zhang, Fangpei Jin, Xiaoxing Liu
 
 The model is trained using graph-structured filtered Two-Fluid Model (TFM) simulation data to predict drift flux, which is then used to calculate filter drag force.
 
