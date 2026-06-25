@@ -7,14 +7,13 @@ Paper title: “Graph convolutional network-based filtered drag model for coarse
 
 Authors: Abdul Mateen, Qinyu Zhang, Fangpei Jin, Xiaoxing Liu
 
-The model is trained using graph-structured filtered Two-Fluid Model (TFM) simulation data to predict drift flux, which is then used to calculate filter drag force.
-
+The complete codebase, including data preprocessing, graph construction, GCN training, and evaluation, will be released upon acceptance of the manuscript. However, the pretrained model can be used as described below.
 ---
 
 ## Repository Structure
 
 ```
-├── gcn_filter_drag_model.ipynb          # Main notebook: data preparation, graph construction, GCN training and evaluation (available in full form  upon acceptance)
+├── gcn_filter_drag_model.ipynb          # Main notebook: (available in full form  upon acceptance)
 ├── saved_models/
 │   ├── final_3_marker_gcn_DF_model_updated.pt           # Best model: Group 2 (75, 275, 300 μm)
 │   └── geldart_B_3_marker_gcn_DF_model_updated.pt       # Group 1: Geldart B particles (275, 300 μm)
@@ -61,7 +60,7 @@ Two pre-trained models are provided based on the three-marker drift flux (DF) fo
 
 ### 1. Reload Pre-Trained Model (No Retraining Required)
 
-Open `gcn_filter_drag_model.ipynb` and navigate to the section:
+However, the pretrained model can be used as described below.
 
 ```
 # Reload the saved model without retraining the model
