@@ -102,6 +102,7 @@ The source code, saved model weights, and training history are publicly availabl
   author={Abdul Mateen et al.},
   journal={},
   year={2026}
+  Zenodo DOI: 10.5281/zenodo.20842931
 }
 ```
 
