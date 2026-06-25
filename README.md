@@ -14,7 +14,7 @@ The model is trained using graph-structured filtered Two-Fluid Model (TFM) simul
 ## Repository Structure
 
 ```
-├── gcn_filter_drag_model.ipynb          # Main notebook: data preparation, graph construction, GCN training and evaluation
+├── gcn_filter_drag_model.ipynb          # Main notebook: data preparation, graph construction, GCN training and evaluation (available in full form  upon acceptance)
 ├── saved_models/
 │   ├── final_3_marker_gcn_DF_model_updated.pt           # Best model: Group 2 (75, 275, 300 μm)
 │   └── geldart_B_3_marker_gcn_DF_model_updated.pt       # Group 1: Geldart B particles (275, 300 μm)
