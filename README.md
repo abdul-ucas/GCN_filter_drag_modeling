@@ -10,19 +10,6 @@ Authors: Abdul Mateen, Qinyu Zhang, Fangpei Jin, Xiaoxing Liu
 ### **Note:** The pretrained model can be used as described below. A Jupyter notebook is also provided that demonstrates the complete workflow for using the pretrained GCN model, including data processing and model inference.
 ---
 
-## Repository Structure
-
-```
-├── gcn_filtered_drag_pretrained_model.ipynb          # jupyter notebook: source code used to load pretrained model 
-├── saved_models/
-│   ├── final_3_marker_gcn_DF_model_updated.pt           # Best model: Group 2 (75, 275, 300 μm)
-│   └── geldart_B_3_marker_gcn_DF_model_updated.pt       # Group 1: Geldart B particles (275, 300 μm)
-├── README
-└── LICENSE
-```
-
----
-
 ## Requirements
 
 ```
