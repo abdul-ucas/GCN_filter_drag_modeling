@@ -7,7 +7,7 @@ Paper title: “Graph convolutional network-based filtered drag model for coarse
 
 Authors: Abdul Mateen, Qinyu Zhang, Fangpei Jin, Xiaoxing Liu
 
-**Note:** The complete training framework will be released upon acceptance of the associated manuscript. However, the pretrained model can be used as described below.
+**Note:** The complete training framework will be released upon acceptance of the associated manuscript. However, the pretrained model (named as saved model in the repository) can be used as described below.
 ---
 
 ## Repository Structure
@@ -17,7 +17,7 @@ Authors: Abdul Mateen, Qinyu Zhang, Fangpei Jin, Xiaoxing Liu
 ├── saved_models/
 │   ├── final_3_marker_gcn_DF_model_updated.pt           # Best model: Group 2 (75, 275, 300 μm)
 │   └── geldart_B_3_marker_gcn_DF_model_updated.pt       # Group 1: Geldart B particles (275, 300 μm)
-├── saved_training_history/              # Training and validation loss history for all folds
+├── README
 └── LICENSE
 ```
 
@@ -82,7 +82,7 @@ To train the GCN model on a new dataset, provide your filtered simulation data i
 - Graph construction from filtered CFD data
 - k-cross-validation training framework
 - Model checkpointing based on best validation MSE
-- Training history and progression plots
+- Training weights and progression plots
 - Embedding visuals and PCA
 
 ## Data Availability
