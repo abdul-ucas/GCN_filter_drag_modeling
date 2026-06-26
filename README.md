@@ -7,7 +7,7 @@ Paper title: “Graph convolutional network-based filtered drag model for coarse
 
 Authors: Abdul Mateen, Qinyu Zhang, Fangpei Jin, Xiaoxing Liu
 
-**Note:** The complete training framework will be released upon acceptance of the associated manuscript. However, the pretrained model (named as saved model in the repository) can be used as described below.
+**Note:** The complete training framework will be released upon acceptance of the associated manuscript. However, the pretrained model can be used as described below. A Jupyter notebook is also provided that demonstrates the complete workflow for using the pretrained GCN model, including data processing and model inference.
 ---
 
 ## Repository Structure
