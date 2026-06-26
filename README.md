@@ -7,7 +7,7 @@ Paper title: “Graph convolutional network-based filtered drag model for coarse
 
 Authors: Abdul Mateen, Qinyu Zhang, Fangpei Jin, Xiaoxing Liu
 
-**Note:** The complete training framework will be released upon acceptance of the associated manuscript. However, the pretrained model can be used as described below. A Jupyter notebook is also provided that demonstrates the complete workflow for using the pretrained GCN model, including data processing and model inference.
+### **Note:** The pretrained model can be used as described below. A Jupyter notebook is also provided that demonstrates the complete workflow for using the pretrained GCN model, including data processing and model inference.
 ---
 
 ## Repository Structure
@@ -75,15 +75,9 @@ model.eval()
 
 > **Important:** You will need your own filtered TFM simulation data to use the pretrained model code. Filtered data from this study is available upon request as data pickle files (see Data Availability section below).
 
-### 2. Training on New Datasets (available after acceptance)
+### 2. Training on New Datasets 
 
 To train the GCN model on a new dataset, provide your filtered simulation data in the graph format and run the k-fold cross-validation training loop inside `gcn_filterd_drag_model.ipynb` (available upon acceptance of the associated manuscript). The training loop handles:
-
-- Graph construction from filtered CFD data
-- k-cross-validation training framework
-- Model checkpointing based on best validation MSE
-- Training weights and progression plots
-- Embedding visuals and PCA
 
 ## Data Availability
 
